@@ -20,7 +20,7 @@ def create(request):
     if request.method == 'POST':
         data = {
             'Name': request.POST.get('name'),
-            'Pictures': [{'url': request.POST.get('url') or 'https://www.classicposters.com/images/nopicture.gif'}],
+            'Pictures': [{'url': request.POST.get('url') or 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png'}],
             'Rating': int(request.POST.get('rating')),
             'Notes': request.POST.get('notes')
         }
